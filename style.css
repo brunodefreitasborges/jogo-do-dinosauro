@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    overflow: hidden;
+    background-color: #d4e071
+}
+
+#dino {
+    width: 60px;
+    height: 60px;
+    background: url('assets/dino.png');
+    position: absolute;
+    bottom: 0;
+    margin-left: 50px;
+}
+
+.cactus {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    bottom: 0;
+    background: url(assets/cactus.png);
+    
+}
+
+#game-over {
+    text-align: center;
+    margin-top: 300px;
+    font-family: 'Press Start 2P', cursive;
+    color:gray
+}
+
+@keyframes parallax {
+    from {
+        background-position: 70000%;
+    }
+    to {
+        background-position: 0;
+    }
+}
+
+.background {
+    position: absolute;
+    bottom: 0px;
+    background: url(assets/background.png);
+    background-repeat: repeat-x;
+    background-size: contain;
+    animation: parallax 1200s infinite linear;
+    width: 100%;
+    height:300px;
+}
+
